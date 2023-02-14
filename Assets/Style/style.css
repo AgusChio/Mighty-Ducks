@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f8e12e' fill-opacity='0.24' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+header {
+    background-image: url(../Images/hockey-home.jpg);
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+h1 {
+    width: 50%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px;
+    width: 7rem;
+    height: 6rem;
+}
+
+.container-MD {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+}
+
+
+/*   Inicio de Navbar */
+nav {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    box-shadow: 0px 5px 0px #5FA199;
+    margin-bottom: 30px ;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #211915;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: #5FA199;
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #5FA199;
+    height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+nav.fill ul li a {
+    transition: all 2s;
+}
+
+nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+
+nav.fill ul li a:hover {
+    color: #5FA199;
+    z-index: 1;
+}
+
+nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+}
+
+.active{
+    color: #5FA199;
+}
+
+/* Fin de Navbar */
+
+/* Incio de Main */
+main{
+    background-color: #fafbe3;
+    width: 95%;
+    margin: auto;
+    min-height: 50vh;
+}
+
+.title-UE{
+    color: #211915;
+    padding: 30px 0px 0px 0px;
+    border: none;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-UE{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-text-image{
+    display: flex;
+    justify-content: space-around;
+}
+
+.dates-info{
+    margin-bottom: 20px;
+}
+
+.title-date{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-info{
+    font-size: 16px;
+}
+
+.image-home{
+    width: 30rem;
+    height: 20rem;
+    box-shadow: #312f2d90 3px 3px 3px;
+}
+
+.hover01 figure img {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.hover01 figure:hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/* Fin de Main */
+
+/* Inicio de Footer */
+footer{
+    margin-top: 40px;
+    display: flex;
+    border-top: #F8E12E dashed 2px;
+    justify-content: center;
+    text-shadow: #5f5b59b1;
+    padding: 30px;
+    background-color: #5FA199;
+    color: white;
+}
+/* Fin de Footer */
+
