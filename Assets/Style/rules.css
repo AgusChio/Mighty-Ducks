@@ -16,7 +16,7 @@ body{
 
 header {
     padding: 20px 0px 0px 20px;
-    background-image: url(../Images/image-aboutUs.jpg);
+    background-image: url(../Images/image-header-rules.jpg);
     width: 100%;
     height: 90vh;
     background-repeat: no-repeat;
@@ -156,50 +156,42 @@ main{
     justify-content: center;
 }
 
-.container-UE{
-    padding: 30px;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.sentence-rule{
+    text-align: center;
 }
 
-.container-text-image{
-    display: flex;
-    justify-content: space-around;
+.container-text{
+    padding: 30px;
 }
 
 .dates-info{
     margin-bottom: 20px;
 }
 
-.title-date{
-    font-size: 20px;
+.title-rules{
     margin-bottom: 10px;
 }
 
-.text-info{
-    font-size: 16px;
+.title-rules2{
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-.image-home{
-    width: 30rem;
-    height: 20rem;
-    box-shadow: #312f2d90 3px 3px 3px;
+.title-rules3{
+    margin: 20px 0px 0px 20px;
 }
 
-.hover01 figure img {
-	-webkit-transform: scale(0.9);
-	transform: scale(0.9);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+.sentence-rule-abc{
+    margin: 10px 0px 0px 30px;
 }
 
-.hover01 figure:hover img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
+.sentence-rule-allplay{
+    margin: 10px 0px 0px 0px;
 }
 
+.rule-list{
+    margin: 10px 0px 0px 40px;
+}
 /* Fin de Main */
 
 /* Inicio de Footer */
