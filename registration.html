@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/Style/registration.css">
+    <link rel="shortcut icon" href="./Assets/Images/logo-sin-letras.png" type="image/x-icon">
+    <title>Registration Form || M.D.H.L</title>
+</head>
+<body>
+    <header>
+        <div class="container-MD">
+            <img src="./Assets/Images/logo-sin-letras.png" class="logo">
+            <h1 class="title-MD">Mighty Ducks Hockey League</h1>
+        </div>
+    </header>
+    <nav class="stroke">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="./rules.html">Rules</a></li>
+            <li><a href="./gameInformation.html">Game Information</a></li>
+            <li><a href="#" class="active">Registration Form</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h3 class="title-UE">Registration Form</h3>
+        <form action="./show_data.html" method="get">
+            <fieldset class="container-names">
+                <div>
+                    <label for="fName"><b>Player's First Name:</b></label>
+                    <input type="text" name="First Name" id="fName">
+                </div>
+                <div>
+                    <label for="lName"><b>Last Name:</b></label>
+                    <input type="text" name="Last Name" id="lName">
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset class="container-address">
+                <div>
+                    <label for="street"><b>Street Address:</b></label>
+                    <input type="text" name="street" id="street">
+                </div>
+                <div>
+                    <label for="city"><b>City:</b></label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div>
+                    <label for="code"><b>Zip Code:</b></label>
+                    <input type="text" name="code" id="code">
+                </div>
+            </fieldset>
+            <hr>
+
+            <fieldset class="container-date-gender">
+                <div>
+                    <label for="bDate"><b>Birth Date(mm/dd/yyyy):</b></label>
+                    <input type="date" name="Birth Date" id="bDate">
+                </div>
+                <div class="container-gender">
+                    <h4>Gender:</h4>
+                    <div class="gender">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                    </div>
+                    <div class="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male" value="male">
+                    </div>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset class="container-school">
+                <h4>Grade:</h4>
+                <div class="container-grade">
+                    <div class="radios-form">
+                        <label for="preSchool">Pre-School</label>
+                        <input type="radio" name="grade" id="preSchool" value="Pre-School">
+                    </div>
+                    <div class="radios-form">
+                        <label for="1st">1st</label>
+                        <input type="radio" name="grade" id="1st" value="1st">
+                    </div>
+                    <div class="radios-form">
+                        <label for="2nd">2nd</label>
+                        <input type="radio" name="grade" id="2nd" value="2nd">
+                    </div>
+                    <div class="radios-form">
+                        <label for="3rd">3rd</label>
+                        <input type="radio" name="grade" id="3rd" value="3rd">
+                    </div>
+                    <div class="radios-form">
+                        <label for="4th">4th</label>
+                        <input type="radio" name="grade" id="4th" value="4th">
+                    </div>
+                    <div class="radios-form">
+                        <label for="5th">5th</label>
+                        <input type="radio" name="grade" id="5th" value="5th">
+                    </div>
+                </div>
+                <div class="container-closest-school">
+                    <div class="title-subtitle">
+                        <h4>Which elementary school do you live near?</h4>
+                        <h5>Closest School:</h5>
+                    </div>
+                    <div class="container-radios-school">
+                        <div class="radios-form2">
+                            <label><input type="radio" name="school" id="ajKatzenmaier" value="AJ Katzenmaier">AJ Katzenmaier</label>
+                        </div>
+                        <div class="radios-form2">
+                            <label><input type="radio" name="school" id="greenbay" value="Greenbay">Greenbay</label>
+                        </div>
+                        <div class="radios-form2">
+                            <label><input type="radio" name="school" id="hayeager" value="Howard A Yeager">Howard A Yeager</label>
+                        </div>
+                        <div class="radios-form2">
+                            <label><input type="radio" name="school" id="mpHart" value="Marjorie P Hart">Marjorie P Hart</label>
+                        </div>
+                        <div class="radios-form2">
+                            <label><input type="radio" name="school" id="nElementary" value="North Elementary">North Elementary</label>
+                        </div>
+                        <div class="radios-form2">
+                            <label><input type="radio" name="school" id="sElementary" value="South Elementary">South Elementary</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset class="container-position">
+                <h4>What position(s) do you normally play?(check all that apply)</h4>
+                <div class="container-checkbox">
+                    <div class="checkbox-positions">
+                        <label><input type="checkbox" name="position" id="forward" value="Forward">Forward</label>
+                    </div>
+                    <div class="checkbox-positions">
+                        <label><input type="checkbox" name="position" id="defense" value="Defense">Defense</label>
+                    </div>
+                    <div class="checkbox-positions">
+                        <label><input type="checkbox" name="position" id="midfield" value="Minfield">Midfield</label>
+                    </div>
+                    <div class="checkbox-positions">
+                        <label><input type="checkbox" name="position" id="goalkeeper" value="Goalkeeper">Goalkeeper</label>
+                    </div>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset class="container-uniformSize">
+                <h4>Uniform Size:</h4>
+                <div class="container-radios-size">
+                    <div class="radios-form">
+                        <label><input type="radio" name="size" id="ySmall" value="Youth Small">Youth Small</label>
+                    </div>
+                    <div class="radios-form">
+                        <label><input type="radio" name="size" id="yMedium" value="Youth Medium">Youth Medium</label>
+                    </div>
+                    <div class="radios-form">
+                        <label><input type="radio" name="size" id="medium" value="Medium">Medium</label>
+                    </div>
+                    <div class="radios-form">
+                        <label><input type="radio" name="size" id="yLarge" value="Youth Large">Youth Large</label>
+                    </div>
+                    <div class="radios-form">
+                        <label><input type="radio" name="size" id="small" value="Small">Small</label>
+                    </div>
+                    <div class="radios-form">
+                        <label><input type="radio" name="size" id="large" value="Large">Large</label>
+                    </div>
+                    <div class="radios-form">
+                        <label><input type="radio" name="size" id="eLarge" value="Extra-Large">Extra-Large</label>
+                    </div>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset class="container-permission">
+                <h4>Permission to Play</h4>
+                <p class="paragraph-permison">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, which transportation
+                By entering your name below, I here by agree and authorize the above. In addition, by entering your name below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                <div class="container-signature-date">
+                    <div class="text-date-permission">
+                        <label for="parent">Parent/GuardianName</label>
+                        <input type="text" name="signature" id="parent">
+                    </div>
+                    <div class="text-date-permission">
+                        <label for="ddate">Date</label>
+                        <input type="date" name="ddate" id="ddate">
+                    </div>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset class="button-submit">
+            <button class="ov-btn-slide-left" type="submit">Submit</button>
+            </fieldset>
+            </form>
+    </main>
+    <footer>
+        <p><b>Copyright © 2022 M.D.H.L - Agustina Chiodini - Cohort 37/38</b></p>
+    </footer>
+</body>
+</html>
