@@ -213,3 +213,43 @@ footer{
 }
 /* Fin de Footer */
 
+/* MOBILE */
+@media screen and (min-width: 320px) and (max-width:740px){
+    header{
+        width: 100%;
+        height: 50vh;
+    }
+
+    h1{
+        width: 80%;
+        font-size: 25px;
+    }
+
+    .logo{
+        width:3rem;
+        height:3rem;
+    }
+    nav{
+        width: 100%;
+    }
+
+    .container-text-image{
+        padding: 20px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    .image-home{
+        width: 18rem;
+        height: 15rem;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width:741px) and (max-width:930px){
+    nav{
+        width: 100%;
+    }
+}
